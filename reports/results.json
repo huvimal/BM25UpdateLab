@@ -1,0 +1,99 @@
+{
+  "project": "BM25UpdateLab",
+  "number": 68,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-27T04:40:32Z",
+  "duration_seconds": 0.16666245460510254,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0",
+    "torch": "2.10.0+cpu",
+    "transformers": "4.57.6",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.32.0",
+    "mcp": "2.3.0"
+  },
+  "source_sha256": {
+    "common.py": "f195b9f74b106fc8deb5aa2d5f220ffc308c53f4491f5b698328a393827f0702",
+    "experiment.py": "4b575ddbe4b4b7507d7d52b92ffee42bbe7cb2c16920e128201b514799416725",
+    "project.json": "de44d9eb51e19237f66e419941313d7d704332101032c838e63ae718a7a7b6fa",
+    "requirements.txt": "33eb232b2ead4ffff0e3b1256e457b26477d2ea6eded746b44a2bbcb53463814",
+    "run.py": "87dce0e01f672499c6cf59c0de271ece93cb7a6f260c8d68ef9b6aa5a8698110"
+  },
+  "result": {
+    "incremental_ranking": [
+      [
+        "8",
+        2.5618676909241285
+      ],
+      [
+        "0",
+        1.2809338454620642
+      ],
+      [
+        "1",
+        1.2809338454620642
+      ],
+      [
+        "3",
+        0.0
+      ],
+      [
+        "4",
+        0.0
+      ],
+      [
+        "5",
+        0.0
+      ],
+      [
+        "6",
+        0.0
+      ],
+      [
+        "7",
+        0.0
+      ]
+    ],
+    "document_frequencies": {
+      "snapshot": 1,
+      "database": 1,
+      "backup": 2,
+      "restore": 2,
+      "worker": 1,
+      "restart": 1,
+      "jobs": 1,
+      "queue": 1,
+      "expiration": 1,
+      "renew": 1,
+      "certificate": 1,
+      "tls": 1,
+      "timeout": 1,
+      "packet": 1,
+      "trace": 1,
+      "network": 1,
+      "clear": 1,
+      "stale": 1,
+      "records": 1,
+      "cache": 1,
+      "rebuild": 1,
+      "index": 1,
+      "search": 1,
+      "documents": 1,
+      "password": 2,
+      "account": 1,
+      "token": 1,
+      "reset": 1,
+      "audit": 1
+    },
+    "checks": [
+      "Incremental DF equals clean rebuild",
+      "Updated BM25 scores match full rebuild exactly"
+    ],
+    "scope": "Small in-memory BM25 updates with add, replace and delete. Not a concurrent persistent search engine or semantic retriever."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}

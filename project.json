@@ -1,0 +1,12 @@
+{
+  "number": 68,
+  "name": "BM25UpdateLab",
+  "short": "Incremental BM25 maintenance",
+  "summary": "Verify add, replacement and deletion document frequencies and rankings against a clean rebuild.",
+  "scope": "Small in-memory BM25 updates with add, replace and delete. Not a concurrent persistent search engine or semantic retriever.",
+  "skills": [
+    "Python",
+    "Data Processing",
+    "Software Testing"
+  ]
+}
